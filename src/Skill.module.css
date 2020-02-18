@@ -1,0 +1,63 @@
+.skill {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    /*padding-bottom: 100px;*/
+}
+.skillTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    latter-spacing: 1px;
+}
+.icon {
+    height: 80px;
+    width: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition-duration: 500ms;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover {
+    transition-duration: 500ms;
+    transform: rotate(135deg);
+}
+
+.icon img {
+    transform: rotate(-45deg);
+    width: 70%;
+}
+
+.description {
+    text-align: center;
+}
+
+@media screen and (max-width: 1128px){
+    .skill {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .skill {
+        width: 85%;
+        /*margin-bottom: 100px;*/
+    }
+}
+
+@media screen and (max-width: 630px){
+    .skill {
+        width: 85%;
+    }
+}

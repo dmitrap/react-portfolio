@@ -1,0 +1,35 @@
+.navMenu{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+.activeLink:hover:not(:active) {
+    color: #ea548d;
+    border-bottom: 2px solid #ea548d;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.activeLink:active {
+    color: #282c34;
+}
+
+@media screen and (max-width: 600px) {
+    .item a {
+        font-size: 14px;
+    }
+}

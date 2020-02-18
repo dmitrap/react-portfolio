@@ -1,0 +1,92 @@
+.footer {
+    background-color: #1F1F20;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 40px;
+}
+
+.headerTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.line {
+    height: 1px;
+    width: 55px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    background-color: #ea548d;
+}
+
+.socialBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+}
+
+.socialIcon {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #4a4a4a;
+    border-radius: 50%;
+}
+
+.socialIcon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialIcon img {
+    width: 60%;
+}
+
+.socialIcon img:hover:not(:active) {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.socialIcon a:first-child img{
+    width: 40%;
+}
+
+.activeLink {
+
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 626px) {
+    .socialBlock {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .socialBlock {
+        width: 50%;
+        height: 50px;
+    }
+}

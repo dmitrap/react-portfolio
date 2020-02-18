@@ -1,0 +1,112 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting span:nth-child(1) {
+    font-size: 16px;
+}
+
+.greeting .nameSurname {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.greeting .nameSurname span {
+    font-weight: 700;
+    font-stretch: normal;
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.greeting .nameSurname span:nth-child(2){
+    position: relative;
+    z-index: 0;
+}
+
+.greeting .nameSurname span:nth-child(2):before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 20px;
+    background-color: #ea548d;
+    bottom: 0;
+    z-index: -1;
+}
+
+.photo {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    transition: 500ms;
+}
+
+.photo:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.image {
+    background-color: #f2f2f2;
+    height: auto;
+    width: 300px;
+    box-shadow: 0px 0px 2px 2px #4a4a4a;
+
+}
+
+.photo:before {
+    content: "";
+    position: absolute;
+    border: 4px solid #ea548d;
+    height: 110%;
+    width: 100%;
+    left: 10px;
+    top: -16px;
+    z-index: -1;
+}
+
+@media (max-width: 460px) {
+    .greeting .nameSurname span {
+        font-weight: 700;
+        font-stretch: normal;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .image {
+        height: 250px;
+        width: 250px;
+    }
+    .photo .image:before {
+        height: 350px;
+        width:  260px;
+    }
+}
+
+
+    .br__no-display {
+        display: none;
+    }

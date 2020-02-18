@@ -1,0 +1,144 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    allign-items: center;
+    background-color: #252527;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.headerTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.line {
+    height: 1px;
+    width: 55px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    background-color: #ea548d;
+}
+
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    margin-top: 0px;
+}
+
+.messageArea {
+    min-height: 160px;
+    padding: 15px;
+}
+
+.formArea, .messageArea {
+    background: #252527 !important;
+    border: 1px solid #4a4a4a;
+    font-size: 12px;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    /*color: #495057;*/
+    margin-bottom: 1.2rem;
+}
+
+.formArea:focus, .messageArea:focus {
+    border: 2px solid #ea548d;
+    transition: .4s;
+}
+
+.messageArea {
+    min-height: 160px;
+    padding: 15px;
+}
+
+.formArea {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 15px;
+}
+
+.btnSubmit {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 0px 0px 15px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    background-color: transparent;
+    outline: none;
+    position: relative;
+}
+
+.btnSubmit::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    background: #ea548d;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnSubmit:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btnSubmit:hover::after {
+    width: 100%;
+    height: 100%o;
+}
+
+.legend {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.legendSuccess {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.legendError {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: red;
+}
+
+@media (max-width: 626px) {
+    .formWrapper {
+        width: 100%;
+    }
+}
