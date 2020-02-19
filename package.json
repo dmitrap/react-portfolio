@@ -1,11 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shalick.github.io/portfolio",
+  "homepage": "https://dmitrap.github.io/react-portfolio",
   "dependencies": {
     "emailjs-com": "^2.4.1",
-    "gh-pages": "^2.2.0",
     "nodemailer": "^6.4.2",
     "react": "^16.9.0",
     "react-burger-menu": "^2.6.13",
@@ -38,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
