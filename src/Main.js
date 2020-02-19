@@ -25,7 +25,7 @@ function Main() {
                 </div>
 
                 <div className={styles.photo}>
-                    <img className={styles.image} src={profileIcon}/>
+                    <img className={styles.image} src={profileIcon} alt={'me'}/>
                 </div>
             </div>
         </div>

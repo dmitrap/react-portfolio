@@ -3,7 +3,6 @@ import styles from './Footer.module.css';
 import telegramIcon from "./assets/img/telegram.svg";
 import linkedInIcon from "./assets/img/linkedin.svg";
 import gitHubIcon from "./assets/img/github.png";
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 import FooterContacts from "./FooterContacts";
 
@@ -39,7 +38,6 @@ export const Footer = () => {
                     </Fade>
                     <div className={styles.line}></div>
                 </div>
-
                 <div className={styles.socialBlock}>
                     {contacts.map(c => {
                         return <FooterContacts key={c.id} title={c.title} img={c.img} link={c.link}/>
@@ -50,6 +48,6 @@ export const Footer = () => {
 
         </div>
     );
-}
+};
 
 export default Footer;

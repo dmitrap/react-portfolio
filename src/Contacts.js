@@ -11,8 +11,8 @@ class Contacts extends Component {
             name: '',
             email: '',
             legendMessage: ''
-        }
-        this.state = this.initialState
+        };
+        this.state = this.initialState;
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -85,9 +85,9 @@ class Contacts extends Component {
             message_html: this.state.message,
             from_name: this.state.name,
             reply_to: this.state.email
-        })
+        });
 
-        this.setState(() => this.initialState)
+        this.setState(() => this.initialState);
 
         event.preventDefault();
         event.target.reset();
@@ -101,9 +101,10 @@ class Contacts extends Component {
             this.setState({
                 legendMessage: "Your message has been successfully sent"
             });
+             this.resetForm();
         })
             .catch(err => {
-                console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)
+                console.error('Oh well, you failed. Here some thoughts on the error that occured:', err);
                 this.setState({
                     legendMessage: "Your message has failed to be sent"
                 });
