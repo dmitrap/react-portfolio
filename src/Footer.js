@@ -4,6 +4,7 @@ import telegramIcon from "./assets/img/telegram.svg";
 import linkedInIcon from "./assets/img/linkedin.svg";
 import gitHubIcon from "./assets/img/github.png";
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 import FooterContacts from "./FooterContacts";
 
 
@@ -31,21 +32,21 @@ export const Footer = () => {
     return (
         <div className={styles.footer}>
 
-                <div className={styles.container}>
-                    <div className={styles.headerTitle}>
-                        <Flip top>
-                            <h2 className={styles.headerTitle}>Hire me</h2>
-                            </Flip>
-                        <div className={styles.line}></div>
-                    </div>
-
-                    <div className={styles.socialBlock}>
-                        {contacts.map(c => {
-                            return <FooterContacts key={c.id} title={c.title} img={c.img} link={c.link}/>
-                        })}
-                    </div>
-                    <span className={styles.copyright}>© 2020 All rights reserved</span>
+            <div className={styles.container}>
+                <div className={styles.headerTitle}>
+                    <Fade top>
+                        <h2 className={styles.headerTitle}>Hire me</h2>
+                    </Fade>
+                    <div className={styles.line}></div>
                 </div>
+
+                <div className={styles.socialBlock}>
+                    {contacts.map(c => {
+                        return <FooterContacts key={c.id} title={c.title} img={c.img} link={c.link}/>
+                    })}
+                </div>
+                <span className={styles.copyright}>© 2020 All rights reserved</span>
+            </div>
 
         </div>
     );
