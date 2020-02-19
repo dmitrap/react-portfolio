@@ -22,7 +22,9 @@
     width: 80px;
     background: rgba(255, 255, 255, 0.1);
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -31,11 +33,14 @@
 
 .icon:hover {
     transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
     transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
 
 .icon img {
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     width: 70%;
 }
 
@@ -52,7 +57,6 @@
 @media screen and (max-width: 600px){
     .skill {
         width: 85%;
-        /*margin-bottom: 100px;*/
     }
 }
 
