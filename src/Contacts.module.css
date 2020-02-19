@@ -113,8 +113,9 @@
 }
 
 .btnSubmit:hover::after {
+    position: absolute;
     width: 100%;
-    height: 100%o;
+    height: 100%;
 }
 
 .legend {
